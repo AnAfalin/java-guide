@@ -2,14 +2,14 @@
 
 ## :question: Вопросы к интервью
 
-+ [JVM](questions/jvm.md#JVM)
-+ [Java](questions/java.md#JAVA)                                                         
-+ [ООП](questions/oop.md#ООП)                                                                                                   
-+ [Java Core](questions/core.md#Java-Core)                                                                                   
++ [JVM](questions/jvm.md#JVM) :white_check_mark:
++ [Java](questions/java.md#JAVA) :white_check_mark:                                                         
++ [ООП](questions/oop.md#ООП) :white_check_mark:                                                                                                   
++ [Java Core](questions/core.md#Java-Core) :white_check_mark:                                                                                   
 + [Java Collections Framework](questions/collections.md#java-collections-framework)
 ___
 
-+ [Исключения](questions/exceptions.md#исключения)                                                                             
++ [Исключения](questions/exceptions.md#исключения) :white_check_mark:                                                                             
 + [Generics](questions/generics.md#Generics)                                                                                    
 + [Потоки ввода / вывода](questions/io.md#потоки-ввода--вывода)                                                                 
 + [Сериализация](questions/serialization.md#serialization)                                                                      
@@ -27,7 +27,7 @@ ___
 + [Сборщики](questions/projectbuilders.md#сборщики)       
 ___
 
-+ [Git](questions/git.md#git)                                                                                                  
++ [Git](questions/git.md#git) :white_check_mark:                                                                                                  
 + [SQL](questions/sql.md#SQL)                                                                                                   
 + [Базы данных](questions/db.md#базы-данных)                                                                                    
 + [Миграции](questions/migration.md#миграции)         
