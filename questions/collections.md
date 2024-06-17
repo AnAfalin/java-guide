@@ -16,7 +16,7 @@
 + [Что произойдет при вызове `Iterator.next()` без предварительного вызова `Iterator.hasNext()`?](#что-произойдет-при-вызове-iteratornext-без-предварительного-вызова-iteratorhasnext-)
 + [Сколько элементов будет пропущено, если `Iterator.next()` будет вызван после 10-ти вызовов `Iterator.hasNext()`?](#сколько-элементов-будет-пропущено-если-iteratornext-будет-вызван-после-10-ти-вызовов-iteratorhasnext-)
 + [Как поведёт себя коллекция, если вызвать `iterator.remove()`?](#как-поведёт-себя-коллекция-если-вызвать-iteratorremove-)
-+ [Как поведёт себя уже инстанциированный итератор для `collection`, если вызвать `collection.remove()`?](#как-поведёт-себя-уже-инстанциированный-итератор-для-collection--если-вызвать-collectionremove-)
++ [Как поведёт себя уже инстанциированный итератор для `collection`, если вызвать `collection.remove(element)`?](#как-поведёт-себя-уже-инстанциированный-итератор-для-collection--если-вызвать-collectionremoveelement-)
 + [Как избежать `ConcurrentModificationException` во время перебора коллекции?](#Как-избежать-concurrentmodificationexception-во-время-перебора-коллекции)
 + [Какая коллекция реализует дисциплину обслуживания FIFO?](#Какая-коллекция-реализует-дисциплину-обслуживания-fifo)
 + [Чем отличается `ArrayList` от `Vector`?](#чем-отличается-arraylist-от-vector-)
@@ -246,9 +246,28 @@ ___
 ___
 <span style="display: inline-block; float: right">[содержание](#java-collections-framework)</span>
 
-## Как поведёт себя уже инстанциированный итератор для `collection`, если вызвать `collection.remove()`?
+## Как поведёт себя уже инстанциированный итератор для `collection`, если вызвать `collection.remove(element)`?
 
 При следующем вызове методов итератора будет выброшено `ConcurrentModificationException`.
+
+```java
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+
+        Iterator<String> iterator = list.iterator();
+
+        while (iterator.hasNext()) {
+            String element = iterator.next();
+            System.out.println(element);
+            list.remove("B"); // ошибка java.util.ConcurrentModificationException при вызове данного метода
+        }
+
+    }
+```
+
 ___
 <span style="display: inline-block; float: right">[содержание](#java-collections-framework)</span>
 
