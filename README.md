@@ -6,7 +6,7 @@
 + [Java](questions/java.md#JAVA) :white_check_mark:                                                         
 + [ООП](questions/oop.md#ООП) :white_check_mark:                                                                                                   
 + [Java Core](questions/core.md#Java-Core) :white_check_mark:                                                                                   
-+ [Java Collections Framework](questions/collections.md#java-collections-framework)
++ [Java Collections Framework](questions/collections.md#java-collections-framework) :white_check_mark:
 ___
 
 + [Исключения](questions/exceptions.md#исключения) :white_check_mark:                                                                             
